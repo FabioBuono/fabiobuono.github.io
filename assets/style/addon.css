@@ -283,6 +283,19 @@ text-shadow: 1px 0px 2px #B7B8B9;
 }
 
 
+@media (min-width: 400px) and (orientation: landscape) 
+{ 
+  #logoSmall{
+    display: none;
+  }
+  #logoBig{
+    display: none;
+  }
+  #logoUSmall{
+    display: block;
+  }
+}
+
 /* per il social share della home */
 
 #shareHr{
@@ -315,4 +328,4 @@ text-shadow: 1px 0px 2px #B7B8B9;
   }
  }
  
-
+ 
