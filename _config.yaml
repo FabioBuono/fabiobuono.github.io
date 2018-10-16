@@ -10,27 +10,11 @@ theme: fabiobuono
 
 siti: [LoremLab.Com, MarianneCode.Com, YouTube.Com, Medium.Com, Scotch.Io, Hackr.Io]
 
-# http://www.cagrimmett.com/til/2018/04/02/improving-jekyll-build-time.html
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
-  
-# https://www.diycode.cc/projects/jekyll/jekyll-seo-tag
-# http://jekyll.github.io/jekyll-seo-tag/advanced-usage/
-
-#markdown: redcarpet
-#extensions: [fenced_code_blocks]
-
-#{% highlight python %}
-#x = ('a', 1, False)
-#{% endhighlight %}
-
-
-#https://mycyberuniverse.com/web/syntax-highlighting-jekyll.html
-#https://bnhr.xyz/2017/03/25/add-syntax-highlighting-to-your-jekyll-site-with-rouge.html 
 
 markdown: kramdown
 highlighter: rouge
@@ -38,18 +22,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-#```
-#def foo
-#  puts 'foo'
-#end
-#```
-
-
 permalink: /:categories/:title
 
 include: ["_pages", "_elenchi_categorie"]
 
-
-# https://www.sylvaindurand.org/making-jekyll-multilingual/
-# https://www.klaasnotfound.com/2017/02/16/proper-multilingual-site-with-github-pages-and-jekyll/
-# https://simpleit.rocks/ruby/jekyll/tutorials/multilingual-jekyll-without-plugins/
