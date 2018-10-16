@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+  {% include navigation.html %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <p id="post_title"><br></p>
+        <h1 class="mt-4"><strong class="testo">{{ page.title }}</strong></h1>
+        <p class="lead">
+          by <a class="autore" href="{{ site.baseurl }}/about">{{ page.author }}</a>
+        </p>        
+        <hr>
+        <img class="img-fluid rounded colonna zoomIn" src="../assets/img/img1.jpg" alt="">
+        <hr>
+        <span>Pubblicato il {{ page.date | date: "%d-%m-%Y"}}</span>
+        <div class="destra">{% include share.html %}</div>
+        
+        <hr>
+        {{ content }}
+        <hr>
+        <br>
+      </div>
+      {% include side.html %}
+    </div>   
+  </div>
+</div>  <!--??? -->
+
+{% include footer.html %}
+
+  <script src="{{ '/vendor/jquery/jquery.min.js' | prepend:  site.baseurl }}"</script>
+  <script src="{{ '/vendor/bootstrap/js/bootstrap.bundle.min.js' | prepend:  site.baseurl }}"</script>
+</body>
+
+</html>

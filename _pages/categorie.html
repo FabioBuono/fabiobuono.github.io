@@ -1,0 +1,27 @@
+---
+layout: base  
+title: Sfoglia per Categoria
+permalink: categories
+---
+
+<div>
+
+  <hr>
+  <h1>Scegli la tua categoria</h1>
+  <hr>
+  <br>
+
+<ul style="list-style:none;">
+{% for category in site.categories %}
+
+  
+     <li>
+      <a href="{{ site.baseurl }}/{{ category | first }}"> <h2> {{ category | first }} </h2> </a>
+      <br>
+
+    </li>
+  
+
+{% endfor %}
+</ul>
+</div>

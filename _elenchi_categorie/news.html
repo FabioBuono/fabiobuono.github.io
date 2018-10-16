@@ -1,0 +1,26 @@
+---
+layout: page
+title: Categoria 'News'
+permalink: news
+---
+
+{% if site.categories.news %}
+<h1><strong>Articoli della categoria Node.js</strong></h1>
+<br>
+<dl>
+    {% for post in  site.categories.news %}
+    <hr>
+    <dt><a href="{{ site.baseurl }}/{{ post.ur }}"><h2>{{ post.title }}</h2></a></dt>
+    <dd>
+      <p>{{ post.prev }}</p>
+      <small>{{ post.date | date: "%d-%m-%Y" }}</small>
+    </dd>
+    <hr>
+    {% endfor %}
+</dl>
+{% else %}
+<hr>
+<h1>Nessun post in questa categoria</h1>
+<hr>
+{% endif %}
+
