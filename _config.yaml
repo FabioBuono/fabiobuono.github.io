@@ -3,8 +3,8 @@ email: fabio.buono@ymail.com
 description: >- 
   Theme for my personal site on github
 
-baseurl: ""
-url: "" # full URL 
+baseurl: "/fabiobuono.io"
+url: "" # 
 
 theme: fabiobuono
 
