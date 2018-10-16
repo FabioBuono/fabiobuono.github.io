@@ -316,27 +316,3 @@ text-shadow: 1px 0px 2px #B7B8B9;
  }
  
 
- /* titolo in orizzontale */
-
-#navbar1{
-  display: none;
-}
-  
-#navbar{
-  display:block;
-}
- 
-@media only screen and (min-device-width: 480px) 
-and (max-device-width: 640px) 
-and (orientation: landscape) {
-  #navbar1{
-    display: block;
-  }  
-  #navbar{
-    display: none;
-  }
-  
-  
-}
-
-}
