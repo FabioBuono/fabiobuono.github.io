@@ -283,24 +283,6 @@ text-shadow: 1px 0px 2px #B7B8B9;
 }
 
 
-/* logo in orizzontale */
-
- /* titolo in orizzontale */
- 
-@media only screen and (min-device-width: 480px) 
-and (max-device-width: 640px) 
-and (orientation: landscape) { 
-  #logoSmall{
-    display: block;
-  }
-  #logoBig{
-    display: none;
-  }
-  #logoUSmall{
-    display: none;
-  }
-}
-
 /* per il social share della home */
 
 #shareHr{
@@ -333,3 +315,28 @@ and (orientation: landscape) {
   }
  }
  
+
+ /* titolo in orizzontale */
+
+#navbar1{
+  display: none;
+}
+  
+#navbar{
+  display:block;
+}
+ 
+@media only screen and (min-device-width: 480px) 
+and (max-device-width: 640px) 
+and (orientation: landscape) {
+  #navbar1{
+    display: block;
+  }  
+  #navbar{
+    display: none;
+  }
+  
+  
+}
+
+}
