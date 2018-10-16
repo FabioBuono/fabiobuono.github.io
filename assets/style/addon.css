@@ -283,7 +283,7 @@ text-shadow: 1px 0px 2px #B7B8B9;
 }
 
 
-@media (min-width: 400px) and (orientation: landscape) 
+@media (max-width: 400px) and (orientation: landscape) 
 { 
   #logoSmall{
     display: none;
