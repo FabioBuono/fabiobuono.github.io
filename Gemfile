@@ -15,9 +15,3 @@ group :jekyll_plugins do
   gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 end
 
-# https://blog.webjeda.com/jekyll-sitemap/
-
-# bundle check
-# bundle outdated
-# bundle exec jekyll serve --watch --incremental
-# jekyll serve s
